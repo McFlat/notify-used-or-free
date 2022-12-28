@@ -1,0 +1,34 @@
+
+  Usage: notify-used-or-free <disk> <options>
+
+notify-used-or-free / -a 5GB -R user@email.example -u username -p password -S sendgrid
+
+
+  Options:
+
+    -V, --version                                                                                                          output the version number
+    -i, --info                                                                                                             print data info
+    -r, --round                                                                                                            return integer instead of floating point number eg. 1GB not 1.23GB
+    -d, --detect [<used>|<free>]                                                                                           used or free space, free by default
+    -m, --modifier [<less>|<more>]                                                                                         less or more than detected amount, less by default
+    -a, --amount <10GB>                                                                                                    amount of space used or free on disk, eg. 1024MB, 1TB; 5GB by default
+    -t, --template <{{name}} detected {{disk}} has {{out}} {{detect}} on {{hostname}}, which is {{modifier}} than {{in}}>  
+    -s, --subject <[LOW|HIGH] DISK SPACE>                                                                                  send email with this subject title
+    -R, --recipients [email@exam.ple, send@here.too]                                                                       email addresses to send message to
+    -e, --sender-email <sender@exam.ple>                                                                                   sender email address
+    -n, --sender-name <NotifyUsedOrFree>                                                                                   sender name
+    -S, --service <Mailgun|Mailjet|Postmark|SendGrid|SES|SES-US-EAST-1|SES-US-WEST-2|SES-EU-WEST-1|Sparkpost>              service to use, instead of using host:port
+    -H, --host <host.server>                                                                                               host of mail server, or provide service instead
+    -P, --port <587>                                                                                                       port of mail server, or provide service instead
+    -c, --secure                                                                                                           secure connection to send email, true by default
+    -u, --user <name>                                                                                                      username on mail server
+    -p, --pass <word>                                                                                                      password on mail server for username
+    -L, --log <logDir>                                                                                                     save to logfile in <logDir>/.notify-used-or-free.log
+    -X, --debug                                                                                                            show debug messages, false by default
+    -j, --json                                                                                                             json log output, false by default
+    -q, --quite                                                                                                            suppress logger output, false by default
+    -A, --account-sid <ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX>                                                                 valid Twilio account sid
+    -T, --auth-token <your_auth_token>                                                                                     valid Twilio auth token
+    -O, --phones [+13105551234, +12065551234]                                                                              phone numbers to send message to
+    -o, --sender-phone <+13105551234>                                                                                      valid Twilio phone number
+    -h, --help                                                                                                             output usage information

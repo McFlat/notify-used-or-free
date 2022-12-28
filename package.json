@@ -1,0 +1,45 @@
+{
+  "name": "notify-used-or-free",
+  "version": "0.0.4",
+  "description": "Notify by email of free disk space on server or when a certain amount of disk space has been used.",
+  "main": "index.js",
+  "bin": {
+    "notify-used-or-free": "./index.js"
+  },
+  "scripts": {
+    "test": "./test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:FlatEarthTruth/notify-used-or-free.git"
+  },
+  "keywords": [
+    "server",
+    "disk",
+    "usage",
+    "notification",
+    "by",
+    "email",
+    "sms"
+  ],
+  "author": "Alex Goretoy <alex@goretoy.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FlatEarthTruth/notify-used-or-free/issues"
+  },
+  "homepage": "https://github.com/FlatEarthTruth/notify-used-or-free",
+  "dependencies": {
+    "async": "^2.5.0",
+    "commander": "^2.11.0",
+    "hogan.js": "^3.0.2",
+    "lodash": "^4.17.4",
+    "nodemailer": "^2.7.2",
+    "nsutil": "^0.1.4",
+    "twilio": "^3.8.1",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "it": "^1.1.1"
+  }
+}
